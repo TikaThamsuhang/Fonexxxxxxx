@@ -1,0 +1,161 @@
+footer {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    color: black;
+    padding: 25px;
+    border: 1px solid #ccc;
+}
+
+.footer-column {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 30px;
+    vertical-align: top;
+    padding: 0 1px;
+}
+
+.logo-column {
+    width: 30%; 
+}
+
+.links-column {
+    width: 30%; 
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.social-column {
+    width: 30%; 
+    margin-left: 60px; 
+}
+
+.footer-column h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: black;
+}
+
+.footer-column h5 {
+    margin: 20px 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+
+.footer-column ul {
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 1px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #FF5733;
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+}
+
+.email-input input[type="email"] {
+    flex: 1;
+    margin-right: 10px;
+    padding: 7px;
+}
+
+.terms {
+    margin-top: 10px;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.terms label {
+    color: black;
+}
+
+.email-signup button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+
+.email-signup button:hover {
+    color: grey;
+}
+
+.footer-paragraph {
+    margin-top: 5px; 
+    color: black;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #666;
+    margin: 20px 0;
+}
+
+.logo-link {
+    display: inline-block;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.logo-link img {
+    height: 80px;
+    width: auto;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.small-copyright {
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1;
+    color: black;
+}
+
+.small-copyright-warning {
+    font-size: 15px;
+    text-align: left;
+    line-height: 1;
+    color: black;
+}
+
+.footer-column .social-icons {
+    display: flex;
+    justify-content: left;
+    left:10px;
+    margin-top: 20px;
+}
+
+.footer-column .social-icons a {
+    color: black;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.footer-column .social-icons a:hover {
+    color: #FF5733;
+}

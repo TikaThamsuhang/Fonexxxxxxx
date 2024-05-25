@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonex Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/Css/Nav.css">
+    <link rel="stylesheet" href="/Css/footer.css">
+    <link rel="stylesheet" href="/Css/ContactUs.css">
+</head>
+<body>
+    <nav>
+        <!-- nab bar of the page -->
+        <div class="container">
+            <ul class="nav-links">
+                <li class="logo"><a href="../index.html"><img src="../Image/FonexNav.png" alt="Logo"></a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li class="extra-buttons search">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button class="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                </li>                                
+                    <div class="dropdown">
+                        <button class="extra-button dropbtn"><i class="fas fa-user"></i></button>
+                        <div class="dropdown-content">
+                            <a href="UserProfile.html">Profile</a>
+                            <a href="Login.html">Logout</a>
+                        </div>
+                    </div>
+                    <li class="extra-buttons dropdown">
+                        <a href="#" class="extra-button"><i class="fas fa-cart-shopping"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Cart</a>
+                            <a href="#">Cart History</a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!-- Body of the website -->
+    <div class="contact-image">
+        <img src="../Image/ContactUs.jpg" alt="Contact Us Image">
+        <div class="image-overlay">
+            <h1 class="overlay-heading">"Tell us all the specific details of what you require, and we will create the perfect solution for you."</h1>
+            <button class="overlay-button" onclick="scrollDown()">Start Now</button>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; margin-top: 18px;">Fonex Support</h2>
+    <!-- Include the provided HTML code here -->
+    <div class="contact-section">
+        <div class="container">
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">Kamalpokhari. </div>
+                        <div class="text-two">katmandu, Nepal</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+977 9826989738</div>
+                        <div class="text-two">+977 9848540486</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">FoneX@gmail.com</div>
+                        <div class="text-two">FonexPhone@gmail.com</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text">Send us a message | Contact Us</div>
+                    <p>"Got questions? We've got answers. Reach out to us for any inquiries or assistance!"</p>
+                        <form name="feedbackForm" onsubmit="return validationform()">
+                            <div class="input-box">
+                                <input type="text" name="username" placeholder="Enter your name" required/>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" name="email" placeholder="Enter your email" required pattern="[a-zA-Z0-9._%+-]+@email\.com" />
+                            </div>
+                            <div class="input-box message-box">
+                                <textarea name="message" placeholder="Enter your message"required></textarea>
+                            </div>
+                            <div class="button">
+                                <input type="submit" value="Send Now" />
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function scrollDown() {
+            // Adjust the value (e.g., 100) to control how far down the page scrolls
+            window.scrollBy(0, 400); // Scrolls the page down by 100 pixels
+        }
+        
+        function validationform() {
+            var username = document.forms["feedbackForm"]["username"].value;
+            var email = document.forms["feedbackForm"]["email"].value;
+            var message = document.forms["feedbackForm"]["message"].value;
+    
+            if (username.trim() == "" || email.trim() == "" || message.trim() == "") {
+                alert("Fields cannot be empty");
+                return false; // Prevent form submission
+            } else {
+                // You can add further email validation logic if needed
+                alert("Thank you for the feedback");
+                return true; // Allow form submission
+            }
+        }
+    </script>
+    <!-- End of provided HTML code -->
+    <h1 style="text-align: center; margin-top: 18px;">Our location</h2>
+    <div class="mapping-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3532.311840746982!2d85.32304771506206!3d27.707656482791858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1682000974636!5m2!1sen!2snp" 
+        width="1120" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- footer of the page -->
+    <footer>
+        <div class="footer-column logo-column">
+            <a href="../index.html" class="logo-link"><img src="../Image/FonexFooter.png" alt="FoneX logo"></a>
+            <div class="social-line"></div>
+            <p class="footer-paragraph">"Your portal to mobile mastery: Where innovation meets affordability, and every click unlocks a world of endless connectivity and captivating technology."</p>
+        </div>
+        <div class="footer-column links-column">
+            <h5>Useful Links</h5>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Product.html">Store</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column social-column">
+            <h4>Join our newsletter community!</h4>
+            <form class="email-signup">
+                <div class="email-input">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" id="terms-checkbox" required>
+                    <label for="terms-checkbox">Accept our terms and conditions</label>
+                </div>
+            </form>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com/paradigm.outlet?igshid=ZDdkNTZiNTM="><i class="fab fa-facebook"></i></a>
+                <a href="https://discord.gg/VarDEw6CDP"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/paradigm_outlet"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p class="small-copyright">
+            &copy; 2024 FoneX. All rights reserved.
+        </p>
+        <hr>
+        <p class="small-copyright-warning">
+            Website Terms | Privacy Policy | Cookie Policy | Do Not Sell or Share Any Personal Information 
+        </p>
+    </footer> 
+</body>
+</html>

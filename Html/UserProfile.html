@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      width: 80%;
+      max-width: 800px;
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative; 
+    }
+
+    .unique-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    
+    .profile-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .unique-profile-info {
+      text-align: center;
+      margin-right: 50px;
+      margin-left: 40px;
+    }
+
+    .unique-profile-heading {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .unique-profile-picture {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .unique-social-icons {
+      text-align: center;
+      margin-top: 20px; 
+    }
+    
+    .unique-social-icons a {
+      color: #333;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    
+    .unique-social-icons a:hover {
+      color: #4CAF50; 
+    }
+
+    .unique-form-container {
+      position: relative;
+      margin-left: 40px;
+    }
+
+    .unique-form-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -20px; 
+      width: 1px;
+      background-color: grey;
+    }
+
+    .unique-form-container form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    input[type="text"].unique-input, input[type="email"].unique-input, input[type="password"].unique-input, input[type="date"].unique-input, input[type="tel"].unique-input, select.unique-input {
+      width: 100%; 
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    .unique-button {
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      border-radius: 15px;
+    }
+
+    .unique-update-button {
+      background-color: #4CAF50; 
+    }
+
+    .unique-update-button:hover {
+      background-color: #45a049; 
+    }
+
+    .back-arrow {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #333;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .back-arrow:hover {
+      color: #4CAF50;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <i class="fas fa-arrow-left back-arrow" onclick="goBack()"></i>
+  
+  <div class="unique-container">
+    <div class="profile-container">
+      <div class="unique-profile-info">
+        <h1 class="unique-profile-heading">User Profile</h1>
+        <img class="unique-profile-picture" src="/AboutUsImages/AboutUs-Tika.jpg" alt="Profile Picture">
+        <div class="unique-social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="unique-form-container">
+        <form>
+          <input type="text" name="first_name" placeholder="First Name" class="unique-input">
+          <input type="text" name="last_name" placeholder="Last Name" class="unique-input">
+          <input type="email" name="email" placeholder="Email" class="unique-input">
+          <input type="date" name="dob" placeholder="Date of Birth" class="unique-input">
+          <input type="tel" name="phone" placeholder="Phone Number" class="unique-input">
+          <select name="gender" class="unique-input">
+            <option value="" disabled selected>Choose your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="password" name="password" placeholder="Password" class="unique-input">
+          <label for="unique-profile-photo">Update Photo:</label>
+          <input type="file" id="unique-profile-photo" name="profile_photo" accept="../Image/*">
+          <button type="submit" class="unique-button unique-update-button">Update Profile</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function goBack() {
+    window.history.back()
+  }
+</script>
+
+</body>
+</html>

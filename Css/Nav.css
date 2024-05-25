@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: white;
+  border-bottom: 1px solid grey;
+  height: 60px; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.logo img {
+  height: 63px; 
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links li {
+  margin: 0 5px; 
+}
+
+.nav-links li a {
+  font-family: sans-serif;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px; 
+}
+
+.nav-links li a i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.extra-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.extra-button {
+  font-size: 24px; 
+  background-color: white;
+  color: #333;
+  text-decoration: none;
+  margin-left: 5px; 
+  border: none;
+}
+
+
+.nav-links li a:hover {
+  color: #FF5733; 
+}
+
+.nav-links li a:hover i {
+  color: #FF5733; 
+}
+
+.extra-button:hover {
+  color: #FF5733; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: opx 5px;
+}
+
+.dropbtn i {
+  font-size: 18px;
+  margin-bottom: 5px; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+  left: 0;
+  top: 100%; 
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color:  #FF5733;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 5px 30px 5px 10px; 
+  border: 1.5px solid black;
+  border-radius: 20px; 
+  width: 100px; 
+}
+
+.search-button {
+  position: absolute;
+  right: 5px; 
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-button i {
+  font-size: 16px;
+  color: #333;
+}
+

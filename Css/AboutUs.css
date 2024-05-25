@@ -1,0 +1,400 @@
+* {    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.1px;
+    width: 100%;
+    height: auto;
+    background-color:#fff;
+}
+.box{
+    margin: 80px 320px 130px;
+}
+.card{
+    width: 360px;
+    height: 550px;
+    background: #fff;
+    box-shadow: grey 4px 4px 18px 0px; ;
+    position: relative;
+    border-radius: 8px;
+}
+.a{
+  margin-left: 95px;
+}
+.b{
+    margin: 145px 0 0 3px;  
+}
+.d{
+    margin: 145px 0 0 0 ;    
+}
+
+       
+a:hover{
+    color: rgb(186, 0, 0);
+}
+  .box1{
+    margin-left: -181px;
+    width: 375px;
+    height: 350px;
+    text-align: center;
+    position: absolute;
+    padding-right: 164px;
+    margin-top: 14px;
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 grey;
+    border-radius: 8px;
+    padding: 25px;
+    visibility: hidden;
+    
+}
+.shape1{
+position: absolute;
+top: -11px;
+left: 184px;
+width: 20px;
+height: 20px;
+
+transform: rotate(45deg);
+border-right: none;
+border-bottom: none;
+background-color: #fff;
+border-top: 1px solid #d3d3d3;
+border-left: 1px solid #d3d3d3;
+}
+.box2{
+    margin-left: -235px;
+width: 450px;
+height: 350px;
+text-align: center;
+position: absolute;
+padding-right: 164px;
+margin-top: 14px;
+background-color: #fff;
+box-shadow: 0 0 1px 0 grey;
+border-radius: 8px;
+padding: 25px;
+visibility: hidden;   
+
+    
+    
+}
+.shape2{
+position: absolute;
+top: -11px;
+left: 322px;
+width: 20px;
+height: 20px;
+
+transform: rotate(45deg);
+border-right: none;
+border-bottom: none;
+background-color: #fff;
+border-top: 1px solid #d3d3d3;
+border-left: 1px solid #d3d3d3;
+}
+span{
+color: #e64946;
+}
+.box1 p{
+padding-bottom: 15px;
+
+} 
+.button{
+margin-bottom: 15px;
+padding: 10px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: white;
+background: #e64946;
+width: 100%;
+font-size: 20px;
+border: none;
+cursor: pointer;
+}
+.button:hover{
+background: #f15755;
+color: #fff;
+}
+.box1 input{
+width: 100%;
+height: 35px;
+padding: 4px 7px;
+font-size: 15px;
+}
+.box1 img{
+position: absolute;
+width: 60px;
+top: 0;
+right: -30px;
+cursor: pointer;
+}
+.open-box{
+visibility: visible;
+}
+.box2 img{
+width: 140px;
+padding: 35px 0 5px 0;
+margin-right: 16px;
+}
+.box2 .closeImage{
+position: absolute;
+width: 17px;
+top: -25px;
+right: -5px;
+cursor: pointer;
+}
+
+img {
+width: 100%;
+height: auto;
+}
+.text {
+position: absolute;
+top: 190px;
+color: #ffffff;
+text-align: center;
+margin: 0 190px;
+}
+.btn {
+font-size: 22px;
+border: 2px solid #00acc1;
+border-radius: 9px;
+background: black;
+padding: 16px 50px;
+margin-top: 90px;
+color: #00acc1;
+cursor: pointer;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.btn:hover {
+color: white;
+background: #00acc1;
+}
+.nav {
+position: absolute;
+top: 150px;
+margin-left: 101px;
+color: white;
+font-size: 20px;
+}
+.l {
+float: left;
+}
+.c {
+clear: both;
+}
+.feedback{
+    width: 100%;
+    height: 215px;
+    background: #e6f1fc;
+    position: relative;
+}
+.feed{
+    text-align: center;
+    padding: 65px;
+    font-size: 35px;
+}
+.feed button{
+    font-size: 19px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.feed button:hover{
+    color: #fff;
+    background: black;
+    
+}
+.photo{
+    margin: 16px 20px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    
+}
+.photo:hover{
+    margin: 6px 8px; 
+}
+.fig{
+    text-align: center; 
+    margin-top: 356px;
+}
+.icon{
+    position: absolute;
+    right: 116px;
+}
+.icon a img{
+    width: 28px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+.icon a img:hover {
+    transform: scale(1.2);
+}
+
+.btn-btn{
+    border: #fff; 
+    background: #fff; 
+    font-size: 20px; 
+    font-weight: bold; 
+    padding: 26px 20px 0; 
+    color: #0a0a7c; 
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn-btn:hover{
+    color: rgb(83, 168, 168);
+}
+.popup{
+    width: 30%;
+    height: 500px;
+    bottom: 70px;
+    right: 0;
+    visibility: hidden;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999;
+    transition: 0.2s;
+    position: fixed;
+    
+}
+.open-Popup{
+    visibility: visible;
+}
+form{
+    padding: 14px;
+}
+form h3{
+    margin-left: 125px;
+    padding: 0 0 16px 0;
+    font-size: 22px;
+}
+form label{
+    font-weight: bold;
+    font-size: 17px;
+}
+form button{
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+form button:hover {
+	background-color: #45a049;
+}
+form label input{
+    margin-left: 7px;
+    padding: 5px 0 0;
+    border-radius: 4px;
+    border: 2px solid black;
+    width: 290px;
+    height: 25px;
+}
+form label textarea{
+    
+    border-radius: 4px;
+    border: 2px solid black;
+}
+.close-btn{
+    margin-left: 260px;
+}
+.detail{
+    width: 90%;
+    height: 700px;
+    box-shadow: 8px 8px 10px 5px grey ; 
+    margin-left: 85px;
+    top: 15px;
+    background: #191919;
+    padding: 17px 27px;
+    position: fixed;
+    visibility: hidden;
+    display: flex;
+    border-radius: 10px;
+    z-index: 9999;
+}
+.open-Detail{
+    visibility: visible;
+    
+}
+
+.header-detail{
+    margin: 2px auto;
+    
+}
+.detail button{
+    
+    border: none;
+    background:#191919;
+    font-size: 30px;
+    color: #d13434;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+}
+.detail button:hover{
+    color: maroon;
+}
+.header-detail h1{
+    font-size: 45px;
+    color: #fff;
+}
+.header-detail h3{
+    font-size: 20px;
+   
+    color: #fff;
+}
+.header-detail h4{
+    font-size: 19px;
+    letter-spacing: 2px;
+    color: #fcfc;
+}
+.leftDetail img{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: 45px;
+    top: 148px;
+}
+.about{
+    position: absolute;
+    top: 140px;
+    left: 396px;
+    right: 37px;
+    padding-left: 13px;
+}
+.about h2{
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+.about-text {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 21px;
+    font-size: 17px;
+}
+.icons{
+    position: absolute;
+    left: 95px;
+    bottom: 178px;
+}
+.icons a img{
+    width: 48px;
+    position: static;
+    padding: 13px;
+    transition: transform 0.3s ease;
+}
+.icons a img:hover{
+    transform: scale(1.2);
+}
+.close-button{
+    width: 22px; 
+}
+.close-button:hover{
+    transform:scale(1.2);
+}
+
